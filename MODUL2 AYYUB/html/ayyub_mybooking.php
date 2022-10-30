@@ -25,7 +25,7 @@ if (isset($_POST['services'])) {
     }
 }
 
-$total_price = $price * (int)$_POST['duration'] + $service_price
+$total_price = $price * (int)$_POST['duration'] + $service_price;
 
 ?>
 
