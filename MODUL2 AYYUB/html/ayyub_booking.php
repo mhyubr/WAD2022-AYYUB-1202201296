@@ -1,7 +1,7 @@
 <?php
 $gambar = "";
 $selected = "";
-if (isset($_POST['car'])) {
+if (isset($_GET['car'])) {
     if ($_GET['car'] == "Toyota Rush") {
         $gambar = "../img/toyota-rush.png";
         $selected = "Toyota Rush";
@@ -64,7 +64,7 @@ if (isset($_POST['car'])) {
                     <img src="<?= $gambar; ?>" alt="" width="700px" srcset="">
                 </div>
                 <div class="col-sm-5">
-                    <form action="ayyub_mybooking.php">
+                    <form action="ayyub_mybooking.php" method="POST">
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Name</label>
                             <input type="name" class="form-control" id="name" name="name" value="Ayyub_1202201296" aria-describedby="emailHelp" readonly style="background-color: #e6e6e6;">

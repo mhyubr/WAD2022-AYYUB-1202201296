@@ -1,6 +1,7 @@
 <?php
 
-if (isset($_GET['car_type'])) {
+$price = 0;
+if (isset($_POST['car_type'])) {
     if ($_POST['car_type'] == "Toyota Rush") {
         $price = 200000;
     } elseif ($_POST['car_type'] == "Toyota Ayla") {
@@ -19,7 +20,7 @@ if (isset($_POST['services'])) {
             $service_price += 25000;
         } elseif ($service == 'Driver') {
             $service_price += 100000;
-        } elseif ($service == 'Fuel Filled ') {
+        } elseif ($service == 'Fuel Filled') {
             $service_price += 250000;
         }
     }
