@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="asset/style/bootstrap.css">
-    <link rel="shortcut icon" href="asset/images/logo-ead.png" type="image/x-icon">
-    <script src="asset/script/bootstrap.js"></script>
-    <title>Show Room Ayyub | Add Item</title>
+    <link rel="stylesheet" href="../asset/style/bootstrap.css">
+    <link rel="shortcut icon" href="../asset/images/logo-ead.png" type="image/x-icon">
+    <script src="../asset/script/bootstrap.js"></script>
+    <title>Show Room Ayyub | Detail</title>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container-fluid my-2">
             <a class="navbar-brand" href="#">
-                <img class="mx-5" src="asset/images/logo-ead.png" alt="Bootstrap" width="" height="30">
+                <img class="mx-5" src="../asset/images/logo-ead.png" alt="Bootstrap" width="" height="30">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,34 +43,35 @@
         <div class="row">
             <div class="col-sm-5">
                 <div class="card" style="width: 30rem;">
-                    <img src="asset\images\car 1.png" class="card-img-top" alt="...">
+                    <img src="../asset\images\car 1.png" class="card-img-top" alt="...">
                 </div>
             </div>
             <div class="col-sm-5">
                 <form action="" method="post">
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label fw-bold">Nama Mobil</label>
+                        <label for="exampleFormControlInput1" class="form-label fw-bold" value="BMW 14">Nama Mobil</label>
                         <input disabled type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nama Mobil">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label fw-bold">Nama Pemilik</label>
+                        <label for="exampleFormControlInput1" class="form-label fw-bold" value="Ayyub - 1202201296">Nama Pemilik</label>
                         <input disabled type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ayyub - 1202201296">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label fw-bold">Merk</label>
+                        <label for="exampleFormControlInput1" class="form-label fw-bold" value="BMW">Merk</label>
                         <input disabled type="text" class="form-control" id="exampleFormControlInput1" placeholder="Merk Mobil">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label fw-bold">Tanggal Beli</label>
-                        <input disabled type="date" class="form-control" id="exampleFormControlInput1" placeholder="Merk Mobil">
+                        <input disabled type="date" class="form-control" id="exampleFormControlInput1" value="11/12/2022" placeholder="Merk Mobil">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label fw-bold">Deskripsi</label>
+                        <label for="exampleFormControlTextarea1" class="form-label fw-bold" value="The first all-electric Gran Coupé, the BMW i4 delivers outstanding dynamics with a high level of comfort and the ideal qualities to make it your daily driver. The five-door model comes equipped with fifth-generation BMW eDrive technology for sporty performance figures – reaching up to 340 hp. With a long range of up to 591 kilometres* and five spacious full-sized seats, it is the perfect companion for any journey.
+">Deskripsi</label>
                         <textarea disabled class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                     </div>
                     <div class="mb-3">
                         <label for="formFile" class="form-label fw-bold">Foto</label>
-                        <input disabled class="form-control" type="file" id="formFile">
+                        <input disabled class="form-control" type="file" id="formFile" value="bmwi4.PNG">
                     </div>
                     <div class="mb-3">
                         <label for="" class="form-label fw-bold">Status Pembayaran</label>
@@ -84,7 +85,7 @@
                             <label class="form-check-label" for="inlineRadio2">Belum Lunas</label>
                         </div>
                         <br>
-                        <button type="submit" class="btn btn-primary my-5 px-4">Edit</button>
+                        <a href="Edit-Ayyub.php"  class="btn btn-primary my-5 px-4">Edit</button>
                     </div>
                 </form>
             </div>

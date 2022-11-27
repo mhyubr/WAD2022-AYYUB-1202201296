@@ -89,13 +89,13 @@ include('../config/connector.php');
             ?>
                     <!-- card -->
                     <div class="card mx-5 my-4" style="width: 18rem;">
-                        <img src="../asset/images/car 1.png" class="card-img-top" alt="...">
+                        <img src="<?="../asset/images/".$selects['foto_mobil']; ?>" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"><?= $selects['nama_mobil']; ?></h5>
                             <p class="card-text"></p><?= $selects['deskripsi']; ?>
                             <div class="text-center mt-3">
                                 <!-- <form action="" method="get"> -->
-                                <a href="#" class="btn btn-primary mx-2 px-4 rounded-pill">Detail</a>
+                                <a href="Detail-Ayyub.php" class="btn btn-primary mx-2 px-4 rounded-pill">Detail</a>
                                 <a href="?id=<?= $selects['id_mobil'] ?>" class="btn btn-danger mx-2 px-4 rounded-pill">Delete</a>
                                 <!-- </form> -->
                             </div>
