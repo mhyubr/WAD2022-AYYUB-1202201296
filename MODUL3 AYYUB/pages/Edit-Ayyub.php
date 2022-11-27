@@ -10,7 +10,7 @@
     <script src="../asset/script/bootstrap.js"></script>
     <title>Show Room Ayyub | Detail</title>
 </head>
-
+ 
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-primary">

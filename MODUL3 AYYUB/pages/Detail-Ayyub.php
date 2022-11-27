@@ -34,7 +34,7 @@
         </div>
     </nav>
     <!-- navbar -->
-    <!-- content -->
+    <!-- content --> 
     <div class="container">
         <br><br>
         <h2>BMW i4</h2>

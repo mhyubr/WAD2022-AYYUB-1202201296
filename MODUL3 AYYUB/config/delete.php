@@ -7,5 +7,5 @@ function hapus($id)
 
     return mysqli_affected_rows($connect);
 }
-
+ 
 ?>

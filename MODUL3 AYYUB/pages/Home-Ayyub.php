@@ -17,7 +17,7 @@ mysqli_num_rows(query("SELECT * FROM showroom_ayyub_table"));
     <script src="asset/script/bootstrap.js"></script>
     <title>Show Room Ayyub | Home</title>
 </head>
-
+ 
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-primary">

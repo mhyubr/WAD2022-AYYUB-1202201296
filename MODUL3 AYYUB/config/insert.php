@@ -16,7 +16,7 @@ function tambah($data)
     $file_tmp = $_FILES['foto_mobil']['tmp_name']; // temporary file 
 
     // MEMINDAHKAN FILE YANG DI UPLOAD KE FOLDER 
-    move_uploaded_file($file_tmp, "../asset/images/" . $nama_mobil);
+    move_uploaded_file($file_tmp, "../asset/images/" . $nama_mobil_file);
 
     // pembayaran
     $payment_status = $data['status'];
