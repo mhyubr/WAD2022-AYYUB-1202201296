@@ -72,8 +72,8 @@ if (isset($_POST["login"])) {
                                 <input required type="password" class="form-control" name="password" id="password">
                             </div>
                             <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1" name='remember' value='true'>Remember me</label>
+                                <input type="checkbox" class="form-check-input" name='remember' id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1" value='true'>Remember me</label>
                             </div>
                             <button type="submit" class="btn btn-primary px-4 mt-4 mb-3" name="login">Login</button>
                             <br>

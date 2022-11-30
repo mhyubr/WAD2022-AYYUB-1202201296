@@ -10,7 +10,6 @@ if ( isset($_COOKIE['login'])) {
 
 if ( !isset($_SESSION['login'])) {
     header("Location: pages/Home-NoLogin-Ayyub.php");
-    exit;
 }
 
 require 'pages/Home-Ayyub.php'; 

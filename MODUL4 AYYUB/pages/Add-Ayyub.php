@@ -1,8 +1,24 @@
-<?php 
+<?php
 
 session_start();
 
-if ( !isset($_SESSION['login'])) {
+$color_bt = "primary";
+
+if (isset($_COOKIE['color'])) {
+    if ($_COOKIE['color'] == 'red') {
+        $color_bt = "danger";
+    } elseif ($_COOKIE['color'] == 'yellow') {
+        $color_bt = "warning";
+    } elseif ($_COOKIE['color'] == 'green') {
+        $color_bt = "success";
+    } else {
+        $color_bt = "primary";
+    }
+} else {
+    $color_bt = "primary";
+}
+
+if (!isset($_SESSION['login'])) {
     header("Location: Login-Ayyub.php");
 }
 
@@ -25,7 +41,7 @@ if ( !isset($_SESSION['login'])) {
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary">
+    <nav class="navbar navbar-expand-lg bg-<?= $color_bt; ?>">
         <div class="container-fluid my-2">
             <a class="navbar-brand" href="#">
                 <img class="mx-5" src="../asset/images/logo-ead.png" alt="Bootstrap" width="" height="30">
@@ -49,7 +65,7 @@ if ( !isset($_SESSION['login'])) {
                         <span class="text-primary">Nama User</span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="Profile-Ayyub.php">Profile</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
@@ -60,12 +76,12 @@ if ( !isset($_SESSION['login'])) {
         </div>
     </nav>
     <!-- navbar -->
-    <!-- content -->    
+    <!-- content -->
     <div class="container">
-            <br><br>
-            <h2>Tambah Mobil</h2>
-            <p class="text-muted">Tambah Mobil baru anda ke list show room</p>
-            <br>
+        <br><br>
+        <h2>Tambah Mobil</h2>
+        <p class="text-muted">Tambah Mobil baru anda ke list show room</p>
+        <br>
         <form action="ListCar-Ayyub.php" method="post" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="nama_mobil" class="form-label fw-bold">Nama Mobil</label>

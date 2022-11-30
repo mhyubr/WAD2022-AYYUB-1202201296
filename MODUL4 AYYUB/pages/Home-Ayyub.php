@@ -1,5 +1,21 @@
 <?php
 
+$color_bt = "primary";
+
+if (isset($_COOKIE['color'])) {
+    if ($_COOKIE['color'] == 'red') {
+        $color_bt = "danger";
+    } elseif ($_COOKIE['color'] == 'yellow') {
+        $color_bt = "warning";
+    } elseif ($_COOKIE['color'] == 'green') {
+        $color_bt = "success";
+    } else {
+        $color_bt = "primary";
+    }
+} else {
+    $color_bt = "primary";
+}
+
 include('../config/connector.php');
 
 mysqli_num_rows(query("SELECT * FROM showroom_ayyub_table"));
@@ -22,7 +38,7 @@ mysqli_num_rows(query("SELECT * FROM showroom_ayyub_table"));
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary">
+    <nav class="navbar navbar-expand-lg bg-<?= $color_bt; ?>">
         <div class="container-fluid my-2">
             <a class="navbar-brand" href="#">
                 <img class="mx-5" src="../asset/images/logo-ead.png" alt="Bootstrap" width="" height="30">
@@ -56,7 +72,7 @@ mysqli_num_rows(query("SELECT * FROM showroom_ayyub_table"));
                         <span class="text-primary">Nama User</span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="../pages/Profile-Ayyub.php">Profile</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
